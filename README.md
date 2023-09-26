@@ -9,8 +9,11 @@ To see the page go to my <a href="https://josegzzv.github.io" target="_blank"> P
 
 
 
-I use this template for my page and modified a few things
+I use this template for my page and modified a few things 
+<p>
 Template Name: DevFolio
 Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
+</p>
+
