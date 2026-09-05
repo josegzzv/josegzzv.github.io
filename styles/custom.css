@@ -1,0 +1,202 @@
+/* =========================================================
+   Site customizations on top of DevFolio
+   - language toggle, hero kicker/tagline, chips, timeline, education
+   ========================================================= */
+
+/* ---- Language toggle ---- */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+.lang-switch .lang-btn {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 2px 4px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s, color 0.2s;
+}
+.lang-switch .lang-btn:hover,
+.lang-switch .lang-btn.active {
+  opacity: 1;
+  color: #0078ff;
+}
+.lang-switch .lang-sep {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 2px;
+}
+#header.header-scrolled .lang-switch { border-left-color: rgba(255, 255, 255, 0.35); }
+@media (max-width: 991px) {
+  .navbar-mobile .lang-switch {
+    border-left: 0;
+    margin-left: 0;
+    padding: 10px 20px;
+  }
+  .navbar-mobile .lang-switch .lang-btn { color: #1b1b1b; font-size: 15px; }
+  .navbar-mobile .lang-switch .lang-btn.active { color: #0078ff; }
+  .navbar-mobile .lang-switch .lang-sep { color: #999; }
+}
+
+/* Language-scoped blocks: only the active language is rendered */
+html[data-lang="en"] .lang-es,
+html[data-lang="es"] .lang-en { display: none !important; }
+
+/* ---- Hero ---- */
+.hero .hero-kicker {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+.hero .hero-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+.hero .btn-outline-light { border-radius: 0; }
+@media (max-width: 767px) {
+  .hero .hero-kicker { font-size: 0.85rem; letter-spacing: 2px; }
+  .hero .hero-title { font-size: 2.6rem; }
+  .hero .btn { margin-bottom: 8px; }
+}
+
+/* ---- Chips ---- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.chips span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eef4fb;
+  color: #0b4a8f;
+  border: 1px solid #d5e4f6;
+  white-space: nowrap;
+}
+.chips.chips-lg span { font-size: 13px; padding: 8px 12px; }
+.service-box:hover .chips span {
+  background: #ffffff;
+  border-color: #c7dcf5;
+}
+
+/* ---- Timeline ---- */
+.timeline {
+  list-style: none;
+  padding: 0 0 0 28px;
+  margin: 0;
+  position: relative;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #d5e4f6;
+}
+.timeline > li {
+  position: relative;
+  padding-bottom: 32px;
+}
+.timeline > li:last-child { padding-bottom: 0; }
+.timeline > li:before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0078ff;
+  box-shadow: 0 0 0 4px #eef4fb;
+}
+.tl-date {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0078ff;
+  margin-bottom: 4px;
+}
+.tl-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1b1b1b;
+}
+.tl-org {
+  font-weight: 400;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+.timeline p { margin-bottom: 8px; text-align: justify; }
+.tl-bullets {
+  padding-left: 18px;
+  margin: 0;
+}
+.tl-bullets li {
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+/* ---- Education ---- */
+.edu-box { height: 100%; }
+.edu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.edu-list li {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e3e9f0;
+}
+.edu-list li:last-child { border-bottom: 0; }
+.edu-year {
+  flex: 0 0 52px;
+  font-weight: 700;
+  color: #0078ff;
+  font-size: 0.95rem;
+  padding-top: 2px;
+}
+.edu-list strong {
+  display: block;
+  color: #1b1b1b;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.edu-org {
+  display: block;
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.edu-note {
+  display: block;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+/* ---- Small polish ---- */
+.about-info a { color: #0078ff; }
+.list-ico a { color: inherit; }
+.list-ico a:hover { color: #0078ff; }
+.counter-text { letter-spacing: 1px; }
+.section-counter .counter-box .counter-num .counter { min-height: 1em; }

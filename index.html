@@ -5,9 +5,20 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>José A. Gonzalez Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>José Antonio González Villalón · CIO | IT Executive</title>
+  <meta name="description"
+    content="José Antonio González Villalón — CIO / Senior IT Director. IT governance, digital transformation, SAP S/4HANA, Data & AI, Manufacturing & Industry 4.0. 20+ years leading corporate IT.">
+  <meta name="keywords"
+    content="CIO, CDO, CAIO, IT Governance, Digital Transformation, Enterprise Architecture, SAP S/4HANA, Artificial Intelligence, Machine Learning, Deep Learning, LLM, Industry 4.0, Monterrey, México">
+  <meta name="author" content="José Antonio González Villalón">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="José Antonio González Villalón · CIO | IT Executive">
+  <meta property="og:description"
+    content="IT governance, digital transformation, SAP S/4HANA, Data & AI. 20+ years leading corporate IT.">
+  <meta property="og:url" content="https://josegzzv.github.io/">
+  <meta property="og:image" content="https://josegzzv.github.io/assets/img/bioPic1.jpg">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
@@ -19,8 +30,11 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/75833cbaf9.js" crossorigin="anonymous"></script>
+
   <!-- Template Main CSS File -->
   <link href="./styles/style.css" rel="stylesheet">
+  <!-- Site customizations (timeline, chips, language toggle) -->
+  <link href="./styles/custom.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -37,19 +51,23 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><img src="./assets/img/favicon.png" alt="" class="img-fluid">Portfolio</a>
+      <h1 class="logo"><a href="index.html"><img src="./assets/img/favicon.png" alt="" class="img-fluid">JAGV</a>
       </h1>
-      <!-- Uncomment below if you prefer to use an image logo
-      <a href="index.html" class="logo"><img src="./assets/img/favicon.png" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#video">Introduction</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active t" href="#hero" data-en="Home" data-es="Inicio">Home</a></li>
+          <li><a class="nav-link scrollto t" href="#about" data-en="Profile" data-es="Perfil">Profile</a></li>
+          <li><a class="nav-link scrollto t" href="#expertise" data-en="Expertise" data-es="Especialidades">Expertise</a></li>
+          <li><a class="nav-link scrollto t" href="#experience" data-en="Experience" data-es="Trayectoria">Experience</a></li>
+          <li><a class="nav-link scrollto t" href="#education" data-en="Education" data-es="Formación">Education</a></li>
+          <li><a class="nav-link scrollto t" href="#work" data-en="Lab" data-es="Lab">Lab</a></li>
+          <li><a class="nav-link scrollto t" href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+          <li class="lang-switch">
+            <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            <span class="lang-sep">|</span>
+            <button type="button" class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,37 +81,25 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am José A González</h1>
-          <p class="hero-subtitle"><span class="typed"
-              data-typed-items="Full Stack Developer, Solution Architect, DevSecOps, Freelancer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <p class="hero-kicker t" data-en="José Antonio González Villalón" data-es="José Antonio González Villalón">José Antonio González Villalón</p>
+          <h1 class="hero-title mb-4 t" data-en="Technology Executive" data-es="Ejecutivo de Tecnología">Technology Executive</h1>
+          <p class="hero-subtitle"><span class="typed-exec"
+              data-typed-en="CIO · Chief Information Officer, CDO · Chief Digital Officer, CAIO · Chief AI Officer, IT Governance &amp; Digital Transformation, Enterprise Architecture, Data &amp; AI Strategy"
+              data-typed-es="CIO · Director de Tecnologías de Información, CDO · Director Digital, CAIO · Director de Inteligencia Artificial, Gobierno de TI y Transformación Digital, Arquitectura Empresarial, Estrategia de Datos e IA"></span></p>
+          <p class="hero-tagline t"
+            data-en="20+ years leading corporate IT · SAP S/4HANA · Data &amp; AI · Manufacturing &amp; Industry 4.0"
+            data-es="+20 años liderando TI corporativa · SAP S/4HANA · Datos e IA · Manufactura e Industria 4.0" data-html="1">
+            20+ years leading corporate IT · SAP S/4HANA · Data &amp; AI · Manufacturing &amp; Industry 4.0</p>
+          <p class="pt-3">
+            <a class="btn btn-primary btn js-scroll px-4 t" href="#about" role="button" data-en="About me" data-es="Conóceme">About me</a>
+            <a class="btn btn-outline-light btn px-4 ms-2" href="https://www.linkedin.com/in/josegzzvillalon/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>&nbsp; LinkedIn</a>
+          </p>
         </div>
       </div>
     </div>
   </div><!-- End Hero Section -->
 
   <main id="main">
-    <!-- ======= Video Section ======= -->
-    <section id="video" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <iframe width="420" height="420"
-                  src="https://www.youtube.com/embed/videoseries?si=bc0xhnZve7zSLeic&amp;list=PL8s3b6u4BRjYNNwCWyEIA9QaRjjNAbuAl&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0" 
-                  style="height: 600px;">
-                </iframe>
-                <!-- <iframe width="420" height="420"
-                  src="https://www.youtube.com/embed/vWDciFpsHVk?si=qkAGDnFBKTUjbeJw&loop=1" style="height: 600px;">
-                </iframe>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </section><!--End Video Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about-mf sect-pt4 route">
@@ -102,78 +108,92 @@
           <div class="col-sm-12">
             <div class="box-shadow-full">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/bioPic1.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="assets/img/bioPic1.jpg" class="img-fluid rounded b-shadow-a" alt="José Antonio González Villalón">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>José Antonio González Villalón</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Full Stack Developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>josegzzv@msn.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(81) 1048-8440</span></p>
+                        <p><span class="title-s t" data-en="Name: " data-es="Nombre: ">Name: </span> <span>José Antonio González Villalón</span></p>
+                        <p><span class="title-s t" data-en="Role: " data-es="Rol: ">Role: </span> <span class="t" data-en="Head of Corporate IT (CIO-track)" data-es="Head of Corporate IT (CIO-track)">Head of Corporate IT (CIO-track)</span></p>
+                        <p><span class="title-s t" data-en="Company: " data-es="Empresa: ">Company: </span> <span>Grupo Industrial Saltillo</span></p>
+                        <p><span class="title-s t" data-en="Location: " data-es="Ubicación: ">Location: </span> <span>Monterrey, NL · México</span></p>
+                        <p><span class="title-s">Email: </span> <span><a href="mailto:josegzzv@msn.com">josegzzv@msn.com</a></span></p>
                         <p><span class="title-s"><i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;<a
-                              href="https://www.linkedin.com/in/josegzzvillalon/">Linkedin Profile</a></span></p>
+                              href="https://www.linkedin.com/in/josegzzvillalon/" target="_blank" rel="noopener">LinkedIn</a></span></p>
                         <p><span class="title-s"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;<a
-                              href="https://github.com/josegzzv">Github Profile</a></span></p>
+                              href="https://github.com/josegzzv" target="_blank" rel="noopener">GitHub</a></span></p>
                       </div>
                     </div>
                   </div>
                   <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>HTML</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>.NET</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Databases</span> <span class="pull-right">95%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                    <p class="title-s t" data-en="Executive focus" data-es="Enfoque ejecutivo">Executive focus</p>
+                    <span class="t" data-en="IT Governance &amp; Strategy" data-es="Gobierno y Estrategia de TI" data-html="1">IT Governance &amp; Strategy</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                    <span class="t" data-en="Digital Transformation &amp; Enterprise Architecture" data-es="Transformación Digital y Arquitectura Empresarial" data-html="1">Digital Transformation &amp; Enterprise Architecture</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                    <span class="t" data-en="Data, AI &amp; Analytics Strategy" data-es="Estrategia de Datos, IA y Analítica" data-html="1">Data, AI &amp; Analytics Strategy</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                    <span class="t" data-en="ERP / SAP S/4HANA Programs" data-es="Programas ERP / SAP S/4HANA">ERP / SAP S/4HANA Programs</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                    <span class="t" data-en="Cybersecurity, Compliance &amp; Risk" data-es="Ciberseguridad, Cumplimiento y Riesgo" data-html="1">Cybersecurity, Compliance &amp; Risk</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
+                      <h5 class="title-left t" data-en="Executive profile" data-es="Perfil ejecutivo">Executive profile</h5>
                     </div>
-                    <p class="lead text-justify">
-                      I am a highly experienced executive in personnel and Information Technology project management,
-                      with a solid track record of over 20 years in designing architecture for mobile applications,
-                      websites, and business process applications. My focus is on leading high-performance teams to
-                      achieve outstanding results in the shortest time possible and with maximum cost efficiency.
-                    </p>
-                    <p class="lead text-justify">
-                      My career includes successfully establishing support models for applications and implementing
-                      high-quality development standards and technical documentation. I am recognized for my ability to
-                      maximize team potential and promote effective collaboration, resulting in the achievement of
-                      strategic objectives and long-term success for the organizations I have worked with.
-                    </p>
-                    <p class="lead text-justify">
-                      I am committed to leveraging my experience and knowledge to drive innovation, foster excellence,
-                      and ensure the successful delivery of large-scale technological projects.
-                    </p>
+                    <div class="lang lang-en">
+                      <p class="lead text-justify">
+                        I lead the corporate IT function of a multinational industrial group, aligning technology strategy
+                        with business objectives. My focus is not code: it is IT governance, enterprise architecture and
+                        measurable value creation.
+                      </p>
+                      <p class="lead text-justify">
+                        I am part of the Project Leader Team on a global SAP S/4HANA Private Edition implementation (SAP
+                        Activate), where I took part in the strategic selection assessment — platform benchmarking,
+                        functional fit, TCO/ROI, risk and change management — and lead the integration, development, BI
+                        and AI workstreams.
+                      </p>
+                      <p class="lead text-justify">
+                        My technical credibility as a software and full-stack architect — with postgraduate specialization
+                        in Artificial Intelligence, Machine Learning and Deep Learning — lets me engage engineering teams and
+                        vendors as a peer and make sound technology decisions. I share that knowledge as an Adjunct
+                        Professor at Tecnológico de Monterrey.
+                      </p>
+                      <p class="lead text-justify">
+                        I am looking to consolidate an organization's technology leadership as CIO / CDO / CAIO,
+                        accelerating its digitalization and turning IT into a competitive advantage.
+                      </p>
+                    </div>
+                    <div class="lang lang-es">
+                      <p class="lead text-justify">
+                        Lidero la función corporativa de TI de un grupo industrial multinacional, alineando la estrategia
+                        tecnológica con los objetivos del negocio. Mi enfoque no es el código: es el gobierno de TI, la
+                        arquitectura empresarial y la creación de valor medible.
+                      </p>
+                      <p class="lead text-justify">
+                        Formo parte del Project Leader Team de una implementación global de SAP S/4HANA Private Edition
+                        (SAP Activate), donde participé en el assessment estratégico de selección — benchmarking de
+                        plataformas, fit funcional, TCO/ROI, riesgos y gestión del cambio — y lidero los frentes de
+                        integraciones, desarrollos, BI e IA.
+                      </p>
+                      <p class="lead text-justify">
+                        Mi credibilidad técnica como arquitecto de software y full-stack — con especialización de posgrado
+                        en Inteligencia Artificial, Machine Learning y Deep Learning — me permite dialogar de igual a igual
+                        con ingeniería y proveedores, y tomar decisiones tecnológicas sólidas. Comparto ese conocimiento
+                        como Profesor de Cátedra en el Tecnológico de Monterrey.
+                      </p>
+                      <p class="lead text-justify">
+                        Busco consolidar el liderazgo tecnológico de una organización como CIO / CDO / CAIO, acelerando su
+                        digitalización y convirtiendo a TI en ventaja competitiva.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,21 +203,17 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
+    <!-- ======= Expertise Section ======= -->
+    <section id="expertise" class="services-mf pt-5 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a text-justify">
-                As a full-stack developer, I offer a comprehensive range of services to meet your web and software
-                development needs. With expertise in both front-end and back-end technologies, I provide end-to-end
-                solutions that drive innovation, efficiency, and growth for your digital projects. Here's a glimpse of
-                what I can do for you.
-              </p>
+              <h3 class="title-a t" data-en="Expertise" data-es="Especialidades">Expertise</h3>
+              <p class="subtitle-a t"
+                data-en="Where I create value: leadership at the top, and enough technical depth to make the right calls."
+                data-es="Dónde genero valor: liderazgo en la cima y suficiente profundidad técnica para tomar las decisiones correctas.">
+                Where I create value: leadership at the top, and enough technical depth to make the right calls.</p>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -205,92 +221,97 @@
         <div class="row">
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-diagram-3"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">Consultation and Strategy</h2>
-                <p class="s-description text-justify">
-                  Whether you're just starting or need to revamp your existing tech stack, I offer strategic guidance to
-                  make informed decisions and maximize your technology investments.
-                </p>
+                <h2 class="s-title t" data-en="Governance &amp; Strategy" data-es="Gobierno y Estrategia" data-html="1">Governance &amp; Strategy</h2>
+                <p class="s-description text-justify t"
+                  data-en="Business–IT alignment, digital transformation roadmap, enterprise architecture, IT budget governance (−10% operating costs, 99.99% availability) and vendor renegotiation with significant savings."
+                  data-es="Alineación negocio–TI, roadmap de transformación digital, arquitectura empresarial, gobierno del presupuesto de TI (−10% en costos operativos, 99.99% de disponibilidad) y renegociación de proveedores con ahorros significativos.">
+                  Business–IT alignment, digital transformation roadmap, enterprise architecture, IT budget governance (−10% operating costs, 99.99% availability) and vendor renegotiation with significant savings.</p>
+                <div class="chips">
+                  <span>IT Governance</span><span>Enterprise Architecture</span><span>TCO / ROI</span><span>Vendor Management</span><span>Agile / SDLC</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-cpu"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-justify">
-                  I create stunning, responsive websites tailored to your brand and objectives. From simple landing
-                  pages to complex e-commerce platforms, I ensure your web presence captivates and engages your
-                  audience.
-                </p>
+                <h2 class="s-title t" data-en="Data &amp; Artificial Intelligence" data-es="Datos e Inteligencia Artificial" data-html="1">Data &amp; Artificial Intelligence</h2>
+                <p class="s-description text-justify t"
+                  data-en="BI and AI strategy with responsible adoption, backed by postgraduate programs in AI/ML, Deep Learning and Data Science (UT Austin – McCombs). Hands-on with neural networks, LLMs and agentic systems."
+                  data-es="Estrategia de BI e IA con adopción responsable, respaldada por posgrados en IA/ML, Deep Learning y Ciencia de Datos (UT Austin – McCombs). Práctica directa con redes neuronales, LLMs y sistemas agénticos.">
+                  BI and AI strategy with responsible adoption, backed by postgraduate programs in AI/ML, Deep Learning and Data Science (UT Austin – McCombs). Hands-on with neural networks, LLMs and agentic systems.</p>
+                <div class="chips">
+                  <span>Machine Learning</span><span>Deep Learning</span><span>LLMs &amp; RAG</span><span>Agentic AI</span><span>Python</span><span>TensorFlow / PyTorch</span><span>Power BI / Tableau</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-boxes"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">API Integration</h2>
-                <p class="s-description text-justify">
-                  Connect your systems and services effortlessly with third-party APIs. I facilitate seamless
-                  integrations, improving functionality and extending the capabilities of your applications.
-                </p>
+                <h2 class="s-title t" data-en="ERP &amp; Enterprise Platforms" data-es="ERP y Plataformas Empresariales" data-html="1">ERP &amp; Enterprise Platforms</h2>
+                <p class="s-description text-justify t"
+                  data-en="Global SAP S/4HANA Private Edition program (SAP Activate): selection assessment, integration, development, BI and AI workstreams. Teamcenter PLM across six countries; middleware, SOA and EDI integration."
+                  data-es="Programa global SAP S/4HANA Private Edition (SAP Activate): assessment de selección y frentes de integraciones, desarrollos, BI e IA. PLM Teamcenter en seis países; middleware, SOA e integración EDI.">
+                  Global SAP S/4HANA Private Edition program (SAP Activate): selection assessment, integration, development, BI and AI workstreams. Teamcenter PLM across six countries; middleware, SOA and EDI integration.</p>
+                <div class="chips">
+                  <span>SAP S/4HANA</span><span>SAP Activate</span><span>Teamcenter PLM</span><span>Oracle SOA</span><span>EDI</span><span>Dynamics CRM</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-shield-check"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">Security and Performance Optimization</h2>
-                <p class="s-description text-justify">
-                  Your digital assets are precious. I implement robust security measures and fine-tune performance to
-                  safeguard your data and ensure rapid response times.
-                </p>
+                <h2 class="s-title t" data-en="Cybersecurity, Compliance &amp; Risk" data-es="Ciberseguridad, Cumplimiento y Riesgo" data-html="1">Cybersecurity, Compliance &amp; Risk</h2>
+                <p class="s-description text-justify t"
+                  data-en="Proven track record with the Mexican tax authority (SAT) as an Authorized Certification Provider (PAC), banking certifications (E-Global, PROSA), secure SDLC, OWASP and PCI-awareness. Active IAFCI member."
+                  data-es="Trayectoria comprobada ante el SAT como Proveedor Autorizado de Certificación (PAC), certificaciones bancarias (E-Global, PROSA), SDLC seguro, OWASP y PCI-awareness. Miembro activo de IAFCI.">
+                  Proven track record with the Mexican tax authority (SAT) as an Authorized Certification Provider (PAC), banking certifications (E-Global, PROSA), secure SDLC, OWASP and PCI-awareness. Active IAFCI member.</p>
+                <div class="chips">
+                  <span>OWASP</span><span>PCI DSS awareness</span><span>SAT / PAC</span><span>ISO 8583</span><span>Risk Management</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-gear-wide-connected"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">Custom Software Development</h2>
-                <p class="s-description text-justify">
-                  Need a specialized software solution? I design and develop custom applications that streamline your
-                  business processes, enhance productivity, and boost competitiveness.
-                </p>
+                <h2 class="s-title t" data-en="Manufacturing &amp; Industry 4.0" data-es="Manufactura e Industria 4.0" data-html="1">Manufacturing &amp; Industry 4.0</h2>
+                <p class="s-description text-justify t"
+                  data-en="OT–IT convergence and shop-floor digitalization: data capture, process automation and operational data enabled for analytics and decision making. Global scale: multicultural teams across Europe, Asia and the Americas."
+                  data-es="Convergencia OT–TI y digitalización de piso de planta: captura de datos, automatización y datos operativos habilitados para analítica y toma de decisiones. Escala global: equipos multiculturales en Europa, Asia y América.">
+                  OT–IT convergence and shop-floor digitalization: data capture, process automation and operational data enabled for analytics and decision making. Global scale: multicultural teams across Europe, Asia and the Americas.</p>
+                <div class="chips">
+                  <span>OT / IT</span><span>Shop-floor Systems</span><span>IoT &amp; Data Capture</span><span>Process Automation</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
+              <div class="service-ico"><span class="ico-circle"><i class="bi bi-code-slash"></i></span></div>
               <div class="service-content">
-                <h2 class="s-title">Maintenance and Support</h2>
-                <p class="s-description text-justify">
-                  My commitment doesn't end with project delivery. I provide ongoing maintenance and support services to
-                  keep your applications running smoothly and up-to-date.
-                </p>
+                <h2 class="s-title t" data-en="Software &amp; Cloud Architecture" data-es="Arquitectura de Software y Nube" data-html="1">Software &amp; Cloud Architecture</h2>
+                <p class="s-description text-justify t"
+                  data-en="Full-stack architect background: .NET / C#, JavaScript, React and the MERN stack, scalable cloud applications, multi-tenant SaaS, CI/CD and DevSecOps. Enough depth to challenge designs and estimates credibly."
+                  data-es="Formación como arquitecto full-stack: .NET / C#, JavaScript, React y stack MERN, aplicaciones escalables en la nube, SaaS multi-tenant, CI/CD y DevSecOps. Profundidad suficiente para cuestionar diseños y estimaciones con credibilidad.">
+                  Full-stack architect background: .NET / C#, JavaScript, React and the MERN stack, scalable cloud applications, multi-tenant SaaS, CI/CD and DevSecOps. Enough depth to challenge designs and estimates credibly.</p>
+                <div class="chips">
+                  <span>.NET / C#</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>MongoDB / SQL Server / Oracle</span><span>AWS / GCP</span><span>CI/CD · DevSecOps</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Expertise Section -->
 
     <!-- ======= Counter Section ======= -->
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
@@ -298,50 +319,38 @@
       <div class="container position-relative">
         <div class="row">
           <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico"><span class="ico-circle"><i class="bi bi-journal-richtext"></i></span></div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
+                <p data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text t" data-en="+ YEARS LEADING IT" data-es="+ AÑOS LIDERANDO TI">+ YEARS LEADING IT</span>
               </div>
             </div>
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
+              <div class="counter-ico"><span class="ico-circle"><i class="bi bi-people"></i></span></div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="29" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
+                <p data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text t" data-en="IT SPECIALISTS LED" data-es="ESPECIALISTAS DE TI A CARGO">IT SPECIALISTS LED</span>
               </div>
             </div>
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
+              <div class="counter-ico"><span class="ico-circle"><i class="bi bi-globe-americas"></i></span></div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
+                <p data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text t" data-en="COUNTRIES WITH DEPLOYMENTS" data-es="PAÍSES CON IMPLEMENTACIONES">COUNTRIES WITH DEPLOYMENTS</span>
               </div>
             </div>
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
+              <div class="counter-ico"><span class="ico-circle"><i class="bi bi-activity"></i></span></div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
+                <p class="counter">99.99</p>
+                <span class="counter-text t" data-en="% AVAILABILITY" data-es="% DISPONIBILIDAD">% AVAILABILITY</span>
               </div>
             </div>
           </div>
@@ -349,22 +358,218 @@
       </div>
     </div><!-- End Counter Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a t" data-en="Career" data-es="Trayectoria">Career</h3>
+              <p class="subtitle-a t"
+                data-en="From software architect to corporate IT leadership — always at the intersection of technology, compliance and business results."
+                data-es="De arquitecto de software a liderazgo corporativo de TI — siempre en la intersección de tecnología, cumplimiento y resultados de negocio.">
+                From software architect to corporate IT leadership — always at the intersection of technology, compliance and business results.</p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <ul class="timeline">
+
+                <li>
+                  <div class="tl-date t" data-en="Oct 2019 – Present" data-es="Oct 2019 – Actual">Oct 2019 – Present</div>
+                  <h4 class="tl-title">Head of Corporate IT (CIO-track) <span class="tl-org">· Grupo Industrial Saltillo</span></h4>
+                  <div class="lang lang-en">
+                    <p>Responsible for the corporate IT function — strategy, architecture, development, BI, databases and operations — leading a multidisciplinary team of 22 specialists and acting as technology counterpart to business leadership.</p>
+                    <ul class="tl-bullets">
+                      <li>Project Leader Team, global SAP S/4HANA Private Edition (SAP Activate): selection assessment; lead of integration, development, BI and AI workstreams.</li>
+                      <li>IT budget governance: −10% operating costs, 99.99% availability; Concur contract renegotiated (−61%) with full functional scope.</li>
+                      <li>Teamcenter PLM rollout across Spain, Italy, Czech Republic, Poland, China and Mexico.</li>
+                      <li>Shop-floor digitalization (OT–IT / Industry 4.0), e-invoicing, middleware, mobile/web applications under a standardized agile model; secure SDLC standards.</li>
+                    </ul>
+                  </div>
+                  <div class="lang lang-es">
+                    <p>Responsable de la función corporativa de TI — estrategia, arquitectura, desarrollo, BI, bases de datos y operaciones — liderando un equipo multidisciplinario de 22 especialistas y ejerciendo la interlocución tecnológica con la dirección del negocio.</p>
+                    <ul class="tl-bullets">
+                      <li>Project Leader Team, SAP S/4HANA Private Edition global (SAP Activate): assessment de selección; líder de los frentes de integraciones, desarrollos, BI e IA.</li>
+                      <li>Gobierno del presupuesto de TI: −10% en costos operativos, 99.99% de disponibilidad; renegociación del contrato de Concur (−61%) preservando el alcance funcional.</li>
+                      <li>PLM Teamcenter en España, Italia, República Checa, Polonia, China y México.</li>
+                      <li>Digitalización de piso de planta (OT–TI / Industria 4.0), facturación electrónica, middleware y aplicaciones móviles/web bajo un modelo ágil estandarizado; estándares de SDLC seguro.</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="tl-date t" data-en="Sep 2023 – Present" data-es="Sep 2023 – Actual">Sep 2023 – Present</div>
+                  <h4 class="tl-title"><span class="t" data-en="Adjunct Professor" data-es="Profesor de Cátedra">Adjunct Professor</span> <span class="tl-org">· Tecnológico de Monterrey</span></h4>
+                  <p class="lang lang-en">School of Engineering and Sciences, Computer Science Department: Business Analytics Platforms, Requirements Analysis, Process Design and Enterprise Architecture. Industry partner (Socio Formador) representing GIS.</p>
+                  <p class="lang lang-es">Escuela de Ingeniería y Ciencias, Departamento de Computación: Plataformas de Analítica de Negocios, Análisis de Requerimientos, Diseño de Procesos y Arquitectura Empresarial. Socio Formador en representación de GIS.</p>
+                </li>
+
+                <li>
+                  <div class="tl-date">Jun 2016 – Oct 2019</div>
+                  <h4 class="tl-title">Head of Software Architecture &amp; Delivery <span class="tl-org">· Access Box Solutions (assigned to GIS)</span></h4>
+                  <p class="lang lang-en">Ran the software factory, analytics/BI, database and middleware teams (8 professionals). Delivered CFDI 3.3 invoicing and payroll, the Vitromex dealer portal and back-office platforms; founded the SWAT rapid-delivery team; led SharePoint, SOA, EDI and .NET teams.</p>
+                  <p class="lang lang-es">Administré la fábrica de software y los equipos de analítica/BI, bases de datos y middleware (8 profesionales). Entregué facturación y nómina CFDI 3.3, el portal de distribuidores Vitromex y aplicativos de backoffice; fundé el equipo SWAT de entrega rápida; lideré equipos SharePoint, SOA, EDI y .NET.</p>
+                </li>
+
+                <li>
+                  <div class="tl-date">Jul 2015 – May 2016</div>
+                  <h4 class="tl-title"><span class="t" data-en="IT Director" data-es="Director de TI">IT Director</span> <span class="tl-org">· Operadora Regia (DETECNO)</span></h4>
+                  <p class="lang lang-en">Led the SAT recertification as Authorized Certification Provider (PAC), built the governance, risk and compliance policies it required, cut infrastructure costs and launched a professional development program for the IT team.</p>
+                  <p class="lang lang-es">Dirigí la recertificación ante el SAT como PAC, construí las políticas de gobierno, riesgo y cumplimiento requeridas, reduje costos de infraestructura e instauré un programa de desarrollo profesional para el equipo de TI.</p>
+                </li>
+
+                <li>
+                  <div class="tl-date">Jul 2013 – Jun 2015</div>
+                  <h4 class="tl-title">Software Architect <span class="tl-org">· Grupo Industrial Saltillo</span></h4>
+                  <p class="lang lang-en">End-to-end implementation of Oracle SOA Suite; SOA and EDI integration standards; XBRL financial reporting; Dynamics CRM implementation team; +5 points in the Great Place to Work – IT score.</p>
+                  <p class="lang lang-es">Implementación completa de Oracle SOA Suite; estándares de integración SOA y EDI; reporteo financiero XBRL; equipo de implementación de Dynamics CRM; +5 puntos en la calificación Great Place to Work – TI.</p>
+                </li>
+
+                <li>
+                  <div class="tl-date">2005 – 2013</div>
+                  <h4 class="tl-title"><span class="t" data-en="Earlier leadership &amp; architecture roles" data-es="Roles previos de liderazgo y arquitectura" data-html="1">Earlier leadership &amp; architecture roles</span> <span class="tl-org">· INCOPTI · Grupo AGM · Tesis Automation &amp; IT · Deintec · Depilite</span></h4>
+                  <p class="lang lang-en">Banner ERP implementation for Tecnológico de Monterrey; architecture of the ANTAD electronic platform and an ISO 8583 transactional gateway with bank certifications (E-Global, PROSA); manufacturing framework for Ternium; point-of-sale platform with centralized bank payment integration across 200+ branches in 7 countries, delivering significant monthly savings.</p>
+                  <p class="lang lang-es">Implementación del ERP Banner para el Tecnológico de Monterrey; arquitectura de la plataforma electrónica ANTAD y de un gateway transaccional ISO 8583 con certificaciones bancarias (E-Global, PROSA); framework de manufactura para Ternium; plataforma de punto de venta con integración centralizada de pagos bancarios en +200 sucursales de 7 países, generando ahorros mensuales significativos.</p>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Experience Section -->
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a t" data-en="Education &amp; Credentials" data-es="Formación y Credenciales" data-html="1">Education &amp; Credentials</h3>
+              <p class="subtitle-a t"
+                data-en="Executive education and postgraduate specialization in AI, Data Science and Cloud Software — on top of an MBA in IT Management."
+                data-es="Educación ejecutiva y especialización de posgrado en IA, Ciencia de Datos y Software en la Nube — sobre una Maestría en Gestión de TI.">
+                Executive education and postgraduate specialization in AI, Data Science and Cloud Software — on top of an MBA in IT Management.</p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="box-shadow-full edu-box">
+              <div class="title-box-2"><h5 class="title-left t" data-en="Academic" data-es="Académica">Academic</h5></div>
+              <ul class="edu-list">
+                <li>
+                  <span class="edu-year">2025</span>
+                  <div>
+                    <strong>PGP in Artificial Intelligence &amp; Machine Learning – Deep Learning Specialization</strong>
+                    <span class="edu-org">The University of Texas at Austin · McCombs School of Business</span>
+                    <span class="edu-note t" data-en="Neural networks, CNNs, RNN/LSTM, transfer learning, TensorFlow / Keras / PyTorch, model deployment." data-es="Redes neuronales, CNN, RNN/LSTM, transfer learning, TensorFlow / Keras / PyTorch, despliegue de modelos.">Neural networks, CNNs, RNN/LSTM, transfer learning, TensorFlow / Keras / PyTorch, model deployment.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2025</span>
+                  <div>
+                    <strong>PGP in Data Science &amp; Business Analytics</strong>
+                    <span class="edu-org">The University of Texas at Austin · McCombs School of Business</span>
+                    <span class="edu-note t" data-en="Predictive modeling, ML applied to finance, marketing, operations and supply chain; Python, SQL, Tableau, Power BI." data-es="Modelos predictivos, ML aplicado a finanzas, marketing, operaciones y supply chain; Python, SQL, Tableau, Power BI.">Predictive modeling, ML applied to finance, marketing, operations and supply chain; Python, SQL, Tableau, Power BI.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2024</span>
+                  <div>
+                    <strong>PGP Full Stack Software Development: Building Scalable Cloud Applications</strong>
+                    <span class="edu-org">The University of Texas at Austin · McCombs School of Business</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2024</span>
+                  <div>
+                    <strong class="t" data-en="Professional Certificate — Full Stack Development with MERN" data-es="Certificado Profesional — Desarrollo Full Stack con MERN">Professional Certificate — Full Stack Development with MERN</strong>
+                    <span class="edu-org">Massachusetts Institute of Technology (MIT xPRO)</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2017</span>
+                  <div>
+                    <strong class="t" data-en="MBA — Information Technology Management" data-es="Maestría en Administración de Negocios — Gestión de TI">MBA — Information Technology Management</strong>
+                    <span class="edu-org">Universidad Tecmilenio</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2002</span>
+                  <div>
+                    <strong class="t" data-en="B.Eng. Information Systems" data-es="Ingeniería en Sistemas de Información">B.Eng. Information Systems</strong>
+                    <span class="edu-org">Universidad Regiomontana</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="box-shadow-full edu-box">
+              <div class="title-box-2"><h5 class="title-left t" data-en="Executive education &amp; memberships" data-es="Educación ejecutiva y membresías" data-html="1">Executive education &amp; memberships</h5></div>
+              <ul class="edu-list">
+                <li>
+                  <span class="edu-year">2022</span>
+                  <div>
+                    <strong class="t" data-en="Leadership in the Digital Era" data-es="Liderazgo en la Era Digital">Leadership in the Digital Era</strong>
+                    <span class="edu-org">EGADE Business School · Tecnológico de Monterrey</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2021</span>
+                  <div>
+                    <strong class="t" data-en="Digital Strategy &amp; Transformation · Global Environment &amp; Technology Innovation Trends" data-es="Estrategia y Transformación Digital · Entorno Global y Tendencias de Innovación Tecnológica" data-html="1">Digital Strategy &amp; Transformation · Global Environment &amp; Technology Innovation Trends</strong>
+                    <span class="edu-org">EGADE Business School · Tecnológico de Monterrey</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2021</span>
+                  <div>
+                    <strong class="t" data-en="Digital Transformation as Business &amp; Innovation Strategy" data-es="Transformación Digital como Estrategia de Negocios e Innovación" data-html="1">Digital Transformation as Business &amp; Innovation Strategy</strong>
+                    <span class="edu-org">Tecnológico de Monterrey</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2021</span>
+                  <div>
+                    <strong>Management 3.0 — Fundamentals Workshop</strong>
+                    <span class="edu-org">Management 3.0</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="edu-year">2024</span>
+                  <div>
+                    <strong class="t" data-en="IAFCI &amp; CCROC Training — Financial Crimes Investigations" data-es="Capacitación IAFCI y CCROC — Investigación de Delitos Financieros" data-html="1">IAFCI &amp; CCROC Training — Financial Crimes Investigations</strong>
+                    <span class="edu-org t" data-en="International Association of Financial Crimes Investigators · active member" data-es="International Association of Financial Crimes Investigators · miembro activo">International Association of Financial Crimes Investigators · active member</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="chips chips-lg mt-3">
+                <span>SAP Activate</span><span>Management 3.0</span><span>OWASP</span><span>IAFCI</span><span>Great Place to Work – IT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Education Section -->
+
+    <!-- ======= Lab / Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Explore a showcase of my work as a full-stack developer. From sleek web designs to powerful software
-                applications, my portfolio demonstrates a diverse range of projects that highlight my skills in
-                front-end and back-end development. Dive into the collection to see how I've transformed concepts into
-                stunning, functional digital solutions. Each project tells a unique story of innovation and technical
-                excellence. Explore my portfolio and envision what I can create for you.
-              </p>
+              <h3 class="title-a t" data-en="Hands-on Lab" data-es="Laboratorio">Hands-on Lab</h3>
+              <p class="subtitle-a t"
+                data-en="A few small JavaScript exercises from my MIT full-stack program. I keep them here as a reminder that I still enjoy building — and that I can read the code my teams write."
+                data-es="Algunos ejercicios de JavaScript de mi programa full-stack del MIT. Los conservo como recordatorio de que sigo disfrutando construir — y de que puedo leer el código que escriben mis equipos.">
+                A few small JavaScript exercises from my MIT full-stack program. I keep them here as a reminder that I still enjoy building — and that I can read the code my teams write.</p>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -373,38 +578,23 @@
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/Game.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Game.png" alt="" class="img-fluid">
-                </div>
+                <div class="work-img"><img src="assets/img/Game.png" alt="PacMen" class="img-fluid"></div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">PacMen</h2>
                     <div class="w-more text-justify">
-                      <span class="w-ctegory">This project implements a simplified version of a Pacmen where Pacmen
-                        moves through the screen, updates the image between an open and closed mouth at regular
-                        intervals, and changes direction when it hits a wall.
-                      </span> / <span class="w-date">26 Aug 2023</span>
+                      <span class="w-ctegory t"
+                        data-en="A simplified PacMan: sprites move across the screen, animate the mouth at regular intervals and bounce off the walls. DOM manipulation and timing in vanilla JavaScript."
+                        data-es="Un PacMan simplificado: los sprites recorren la pantalla, animan la boca a intervalos regulares y rebotan en las paredes. Manipulación del DOM y temporización en JavaScript puro.">
+                        A simplified PacMan: sprites move across the screen, animate the mouth at regular intervals and bounce off the walls. DOM manipulation and timing in vanilla JavaScript.</span> / <span class="w-date">Aug 2023</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/josegzzv/PacMen" target="_blank"><i
-                          class="fa-brands fa-github"></i></a>
-                      <p class="work-icon-title">GitHub Repo</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/PacMen/" target="_blank"><i
-                          class="fa-brands fa-readme"></i></a>
-                      <p class="work-icon-title">README.md</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/PacMen/PacMen/" target="_blank"><i
-                          class="fa-solid fa-display fa-bounce"></i></a>
-                      <p class="work-icon-title">Live Demo</p>
-
-                    </div>
+                    <div class="w-like"><a href="https://github.com/josegzzv/PacMen" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a><p class="work-icon-title">GitHub</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/PacMen/" target="_blank" rel="noopener"><i class="fa-brands fa-readme"></i></a><p class="work-icon-title">README</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/PacMen/PacMen/" target="_blank" rel="noopener"><i class="fa-solid fa-display fa-bounce"></i></a><p class="work-icon-title t" data-en="Live Demo" data-es="Demo">Live Demo</p></div>
                   </div>
                 </div>
               </div>
@@ -413,37 +603,23 @@
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/Eyes.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Eyes.png" alt="" class="img-fluid">
-                </div>
+                <div class="work-img"><img src="assets/img/Eyes.png" alt="Eyes" class="img-fluid"></div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Eyes</h2>
                     <div class="w-more text-justify">
-                      <span class="w-ctegory">This JavaScript project creates a simple and fun animation where a pair of
-                        eyes follows the mouse cursor's movement. It's an interactive way to engage users and showcase
-                        DOM manipulation using JavaScript. Check out how it works and how the objects are manipulated in
-                        order to get the effect.</span> / <span class="w-date">3 Sep. 2023</span>
+                      <span class="w-ctegory t"
+                        data-en="A pair of eyes that follow the mouse cursor. A small, playful study of event handling, geometry and DOM manipulation."
+                        data-es="Un par de ojos que siguen el cursor del mouse. Un estudio breve y lúdico de manejo de eventos, geometría y manipulación del DOM.">
+                        A pair of eyes that follow the mouse cursor. A small, playful study of event handling, geometry and DOM manipulation.</span> / <span class="w-date">Sep 2023</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/josegzzv/Eyes" target="_blank"><i
-                          class="fa-brands fa-github"></i></a>
-                      <p class="work-icon-title">GitHub Repo</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/Eyes/" target="_blank"><i
-                          class="fa-brands fa-readme"></i></a>
-                      <p class="work-icon-title">README.md</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/Eyes/Eyes/" target="_blank"><i
-                          class="fa-solid fa-display fa-bounce"></i></a>
-                      <p class="work-icon-title">Live Demo</p>
-                    </div>
+                    <div class="w-like"><a href="https://github.com/josegzzv/Eyes" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a><p class="work-icon-title">GitHub</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/Eyes/" target="_blank" rel="noopener"><i class="fa-brands fa-readme"></i></a><p class="work-icon-title">README</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/Eyes/Eyes/" target="_blank" rel="noopener"><i class="fa-solid fa-display fa-bounce"></i></a><p class="work-icon-title t" data-en="Live Demo" data-es="Demo">Live Demo</p></div>
                   </div>
                 </div>
               </div>
@@ -451,39 +627,24 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/bustracker.png data-gallery=" portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/bustracker.png" alt="" class="img-fluid">
-                </div>
+              <a href="assets/img/bustracker.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img"><img src="assets/img/bustracker.png" alt="Real Time Bus Tracker" class="img-fluid"></div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Real Time Bus Tracker</h2>
                     <div class="w-more text-justify">
-                      <span class="w-ctegory">This project provides a real-time bus tracking application between the
-                        Massachusetts Institute of Technology (MIT) and Harvard University (MBTA Route 1). It allows
-                        users to see the location of buses on the route in real-time and provides information about the
-                        direction in which they are heading.
-                      </span> / <span class="w-date">8 Sep. 2023</span>
+                      <span class="w-ctegory t"
+                        data-en="Real-time tracking of MBTA Route 1 buses between MIT and Harvard, consuming a public REST API and rendering positions and headings on a live map."
+                        data-es="Seguimiento en tiempo real de los autobuses de la Ruta 1 del MBTA entre MIT y Harvard, consumiendo una API REST pública y mostrando posiciones y dirección en un mapa en vivo.">
+                        Real-time tracking of MBTA Route 1 buses between MIT and Harvard, consuming a public REST API and rendering positions and headings on a live map.</span> / <span class="w-date">Sep 2023</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/josegzzv/BusTracker" target="_blank"><i
-                          class="fa-brands fa-github"></i></a>
-                      <p class="work-icon-title">GitHub Repo</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/BusTracker/" target="_blank"><i
-                          class="fa-brands fa-readme"></i></a>
-                      <p class="work-icon-title">README.md</p>
-                    </div>
-                    <div class="w-like">
-                      <a href="https://josegzzv.github.io/BusTracker/BusTracker/" target="_blank"><i
-                          class="fa-solid fa-display fa-bounce"></i></a>
-                      <p class="work-icon-title">Live Demo</p>
-                    </div>
+                    <div class="w-like"><a href="https://github.com/josegzzv/BusTracker" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a><p class="work-icon-title">GitHub</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/BusTracker/" target="_blank" rel="noopener"><i class="fa-brands fa-readme"></i></a><p class="work-icon-title">README</p></div>
+                    <div class="w-like"><a href="https://josegzzv.github.io/BusTracker/BusTracker/" target="_blank" rel="noopener"><i class="fa-solid fa-display fa-bounce"></i></a><p class="work-icon-title t" data-en="Live Demo" data-es="Demo">Live Demo</p></div>
                   </div>
                 </div>
               </div>
@@ -501,79 +662,45 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
+              <div class="box-shadow-full">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message
-                      </h5>
+                      <h5 class="title-left t" data-en="Let's talk" data-es="Hablemos">Let's talk</h5>
                     </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
+                    <div class="more-info text-justify">
+                      <p class="lead lang lang-en">
+                        Board-level technology leadership, CIO / CDO / CAIO roles, digital transformation programs,
+                        SAP S/4HANA and Data &amp; AI strategy, or advisory on IT governance and enterprise architecture.
+                        The fastest way to reach me is LinkedIn or email.
+                      </p>
+                      <p class="lead lang lang-es">
+                        Liderazgo tecnológico a nivel dirección, roles CIO / CDO / CAIO, programas de transformación
+                        digital, SAP S/4HANA y estrategia de Datos e IA, o asesoría en gobierno de TI y arquitectura
+                        empresarial. La forma más rápida de contactarme es LinkedIn o correo.
+                      </p>
+                      <p class="pt-2">
+                        <a class="button button-a button-big button-rouded" href="mailto:josegzzv@msn.com"><i class="bi bi-envelope"></i>&nbsp; <span class="t" data-en="Send an email" data-es="Enviar correo">Send an email</span></a>
+                      </p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
+                      <h5 class="title-left t" data-en="Get in touch" data-es="Contacto">Get in touch</h5>
                     </div>
-                    <div class="more-info text-justify">
-                      <p class="lead">
-                        Ready to discuss your project or have a question about web development? Get in touch with me
-                        through this convenient contact form. Whether you need a custom web application, want to enhance
-                        your website, or require technical advice, I'm here to help. Fill out the form, and I'll get
-                        back to you promptly to explore how I can assist you in achieving your digital goals. Let's
-                        connect and make your vision a reality!
-                      </p>
+                    <div class="more-info">
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span>Monterrey, NL, México</li>
-                        <li><span class="bi bi-phone"></span> +52 (81) 1048-8440</li>
-                        <li><span class="bi bi-envelope"></span> josegzzv@msn.com</li>
+                        <li><span class="bi bi-envelope"></span> <a href="mailto:josegzzv@msn.com">josegzzv@msn.com</a></li>
+                        <li><span class="bi bi-linkedin"></span> <a href="https://www.linkedin.com/in/josegzzvillalon/" target="_blank" rel="noopener">linkedin.com/in/josegzzvillalon</a></li>
+                        <li><span class="bi bi-github"></span> <a href="https://github.com/josegzzv" target="_blank" rel="noopener">github.com/josegzzv</a></li>
                       </ul>
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href="https://twitter.com/josegzzv"><span class="ico-circle"><i
-                                class="bi bi-twitter"></i></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/josegzzvillalon/"><span class="ico-circle"><i
-                                class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/josegzzvillalon/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/josegzzv" target="_blank" rel="noopener" aria-label="GitHub"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                        <li><a href="https://twitter.com/josegzzv" target="_blank" rel="noopener" aria-label="X / Twitter"><span class="ico-circle"><i class="bi bi-twitter-x"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -593,9 +720,9 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>2023</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; <span id="year">2026</span> <strong>José Antonio González Villalón</strong>. <span class="t" data-en="All Rights Reserved" data-es="Todos los derechos reservados">All Rights Reserved</span></p>
             <div class="credits">
-              Designed by JAGV with bootstrapmade.com/devfolio template
+              Designed by JAGV · <a href="https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/" target="_blank" rel="noopener">DevFolio</a> template by BootstrapMade
             </div>
           </div>
         </div>
@@ -604,8 +731,7 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -613,10 +739,11 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="./js/main.js"></script>
+  <!-- Language toggle + typed titles -->
+  <script src="./js/i18n.js"></script>
 
 </body>
 
