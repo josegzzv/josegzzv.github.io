@@ -220,55 +220,10 @@ html[data-lang="es"] .lang-en { display: none !important; }
   transform: translateY(-2px);
 }
 
-/* shared primitives */
-.vz-edge {
-  fill: none;
-  stroke: #0078ff;
-  stroke-opacity: 0.35;
-  stroke-width: 1.4;
-  stroke-dasharray: 4 3;
-  animation: vz-dash 1.6s linear infinite;
-}
-.vz-pulse { fill: #0078ff; filter: drop-shadow(0 0 2px rgba(0, 120, 255, 0.9)); }
-.vz-node {
-  fill: #ffffff;
-  stroke: #0078ff;
-  stroke-width: 2;
-  animation: vz-glow 2.4s ease-in-out infinite;
-}
-.vz-node-r { fill: #ffffff; stroke: #0078ff; stroke-width: 1.8; }
-.vz-leaf rect { fill: #cfe0f7; }
-.vz-ring { fill: none; stroke: #0078ff; stroke-opacity: 0.45; stroke-width: 1.4; stroke-dasharray: 6 5; }
-.vz-sat rect { fill: #ffffff; stroke: #0078ff; stroke-width: 1.8; }
-.vz-hub { fill: #0078ff; }
-.vz-scan { animation: vz-scan 2.6s ease-in-out infinite; }
-.vz-blink { animation: vz-blink 1.4s ease-in-out infinite; }
-.vz-gear polygon { fill: #0078ff; }
-.vz-gear-sm polygon { fill: #0b4a8f; }
-.vz-wave { fill: none; stroke: #0078ff; stroke-width: 1.6; stroke-dasharray: 3 3; animation: vz-dash 1.2s linear infinite; }
-.vz-signal { animation: vz-glow-opacity 1.6s ease-in-out infinite; }
-.vz-pipe { fill: none; stroke: #0078ff; stroke-opacity: 0.45; stroke-width: 2; stroke-dasharray: 5 4; animation: vz-dash 1s linear infinite; }
-.vz-stage { fill: #ffffff; stroke: #0078ff; stroke-width: 2; animation: vz-stage 1.8s ease-in-out infinite; }
-
-.vz-spin { animation: vz-rotate 9s linear infinite; }
-.vz-spin-slow { animation: vz-rotate 14s linear infinite; }
-.vz-spin-rev { animation: vz-rotate 10s linear infinite reverse; }
-
-@keyframes vz-dash { to { stroke-dashoffset: -14; } }
-@keyframes vz-rotate { to { transform: rotate(360deg); } }
-@keyframes vz-glow {
-  0%, 100% { fill: #ffffff; }
-  50% { fill: #cfe4ff; }
-}
-@keyframes vz-glow-opacity { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
-@keyframes vz-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
-@keyframes vz-scan { 0% { transform: translateY(-26px); } 50% { transform: translateY(58px); } 100% { transform: translateY(-26px); } }
-@keyframes vz-stage {
-  0%, 100% { fill: #ffffff; }
-  30%, 45% { fill: #0078ff; }
-}
+/* shared primitives (all motion is SMIL inside the SVG for Safari/Chrome/Firefox parity) */
+.vz-pulse { pointer-events: none; }
+.svc-viz text { user-select: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .svc-viz *, .svc-viz { animation: none !important; }
-  .svc-viz animateMotion { display: none; }
+  .svc-viz animate, .svc-viz animateMotion, .svc-viz animateTransform { display: none; }
 }
