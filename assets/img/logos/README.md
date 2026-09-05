@@ -8,7 +8,7 @@ While a file is missing, the page shows a monogram fallback automatically.
 | ut-mccombs.png     | UT Austin · McCombs School of Business             | https://brand.utexas.edu              |
 | mit.png            | Massachusetts Institute of Technology (MIT xPRO)   | https://brand.mit.edu                 |
 | tec.png            | Tecnológico de Monterrey                           | https://brandcenter.tec.mx            |
-| egade.jpg          | EGADE Business School                              | https://brandcenter.tec.mx            |
+| (tec.png)          | EGADE Business School — uses the Tec de Monterrey mark | —                                     |
 | tecmilenio.png     | Universidad Tecmilenio                             | https://www.tecmilenio.mx             |
 | ur.png             | Universidad Regiomontana (U-ERRE)                  | https://www.u-erre.mx                 |
 | management30.webp  | Management 3.0                                     | https://management30.com              |
