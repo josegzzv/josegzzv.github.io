@@ -54,7 +54,10 @@
       typeSpeed: 70,
       backSpeed: 35,
       backDelay: 2200,
-      smartBackspace: false
+      smartBackspace: false,
+      // Plain-text mode: in the default 'html' mode Typed.js treats '&' as the
+      // start of an HTML entity and jumps to the next ';', which freezes typing.
+      contentType: 'null'
     });
   }
 
