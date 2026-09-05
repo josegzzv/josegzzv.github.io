@@ -438,3 +438,37 @@ html[data-lang="es"] .lang-en { display: none !important; }
   line-height: 1.3;
 }
 @media (max-width: 991px) { .impact-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Expertise cards: equal height per row, chips anchored to the bottom ---- */
+#expertise .row > [class*="col-"] { display: flex; }
+#expertise .service-box {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#expertise .service-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+#expertise .s-title {
+  min-height: 2.7em;                /* room for two-line titles so descriptions start aligned */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#expertise .s-description { flex: 1 1 auto; }
+#expertise .chips { margin-top: auto; padding-top: 14px; justify-content: center; }
+@media (max-width: 767px) {
+  #expertise .s-title { min-height: 0; }
+}
+/* all six cards identical height (grid with equal rows), not just per row */
+@media (min-width: 768px) {
+  #expertise .row:has(.service-box) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+  }
+  #expertise .row:has(.service-box) > [class*="col-"] { width: auto; max-width: none; }
+}
