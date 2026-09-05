@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Medical RAG Assistant">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b21b6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern></defs>
+<rect width="600" height="400" fill="url(#g)"/><rect width="600" height="400" fill="url(#grid)"/>
+<circle cx="520" cy="80" r="140" fill="#fff" fill-opacity=".06"/><circle cx="560" cy="330" r="90" fill="#fff" fill-opacity=".05"/>
+<g transform="translate(400 60)"><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".8"><rect x="20" y="30" width="60" height="80" rx="6"/><path d="M32 50h36M32 66h36M32 82h22"/></g><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M80 70 H115"/></g><circle cx="140" cy="70" r="22" fill="#fff" fill-opacity=".9"/><text x="140" y="77" text-anchor="middle" font-size="18" font-weight="700" fill="#1b1b1b" font-family="Poppins,Helvetica,Arial,sans-serif">LLM</text></g>
+<text x="40" y="70" font-size="14" font-weight="600" letter-spacing="3" fill="#fff" fill-opacity=".8" font-family="Poppins,Helvetica,Arial,sans-serif">NLP WITH GENERATIVE AI</text>
+<text x="40" y="130" font-size="30" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">Medical RAG Assistant</text>
+<text x="40" y="330" font-size="56" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">RAG + LLM</text>
+<text x="40" y="360" font-size="15" fill="#fff" fill-opacity=".85" font-family="Poppins,Helvetica,Arial,sans-serif">clinical Q&amp;A grounded in a diagnosis manual</text>
+</svg>

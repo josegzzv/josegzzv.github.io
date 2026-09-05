@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Real-Time Bus Tracker">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern></defs>
+<rect width="600" height="400" fill="url(#g)"/><rect width="600" height="400" fill="url(#grid)"/>
+<circle cx="520" cy="80" r="140" fill="#fff" fill-opacity=".06"/><circle cx="560" cy="330" r="90" fill="#fff" fill-opacity=".05"/>
+<g transform="translate(400 60)"><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".85"><path d="M30 120 Q80 20 130 120"/></g><circle cx="30" cy="120" r="9" fill="#fff"/><circle cx="130" cy="120" r="9" fill="#fff"/><circle cx="80" cy="70" r="12" fill="#fff"/><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".4"><circle cx="80" cy="70" r="30" stroke-dasharray="5 5"/></g></g>
+<text x="40" y="70" font-size="14" font-weight="600" letter-spacing="3" fill="#fff" fill-opacity=".8" font-family="Poppins,Helvetica,Arial,sans-serif">MIT XPRO · APIS &amp; MAPS</text>
+<text x="40" y="130" font-size="30" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">Real-Time Bus Tracker</text>
+<text x="40" y="330" font-size="56" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">Live map</text>
+<text x="40" y="360" font-size="15" fill="#fff" fill-opacity=".85" font-family="Poppins,Helvetica,Arial,sans-serif">MBTA public API · MIT ↔ Harvard route</text>
+</svg>
