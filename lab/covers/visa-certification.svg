@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Visa Certification">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern></defs>
+<rect width="600" height="400" fill="url(#g)"/><rect width="600" height="400" fill="url(#grid)"/>
+<circle cx="520" cy="80" r="140" fill="#fff" fill-opacity=".06"/><circle cx="560" cy="330" r="90" fill="#fff" fill-opacity=".05"/>
+<g transform="translate(400 60)"><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".85"><rect x="25" y="25" width="110" height="120" rx="8"/><path d="M45 55h50M45 75h70M45 95h40"/></g><circle cx="118" cy="118" r="20" fill="#22c55e"/><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M108 118 l7 7 14 -16"/></g></g>
+<text x="40" y="70" font-size="14" font-weight="600" letter-spacing="3" fill="#fff" fill-opacity=".8" font-family="Poppins,Helvetica,Arial,sans-serif">ENSEMBLE TECHNIQUES · MODEL TUNING</text>
+<text x="40" y="130" font-size="30" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">Visa Certification</text>
+<text x="40" y="330" font-size="56" font-weight="700" fill="#fff" font-family="Poppins,Helvetica,Arial,sans-serif">AdaBoost</text>
+<text x="40" y="360" font-size="15" fill="#fff" fill-opacity=".85" font-family="Poppins,Helvetica,Arial,sans-serif">best F1 vs. bagging, random forest, GBM and XGBoost</text>
+</svg>

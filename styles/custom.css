@@ -531,3 +531,4 @@ html[data-lang="es"] .lang-en { display: none !important; }
   .lab-featured { flex-direction: column; }
   .lab-featured .lab-cover { flex: none; aspect-ratio: 3 / 2; }
 }
+.lab-grid { justify-content: center; }
