@@ -199,6 +199,7 @@ html[data-lang="es"] .lang-en { display: none !important; }
 .list-ico a { color: inherit; }
 .list-ico a:hover { color: #0078ff; }
 .counter-text { letter-spacing: 1px; }
+.counter-text small { display: block; font-size: .72em; letter-spacing: .5px; text-transform: none; opacity: .85; margin-top: 2px; }
 .section-counter .counter-box .counter-num .counter { min-height: 1em; }
 
 /* =========================================================
