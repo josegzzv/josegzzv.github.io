@@ -39,7 +39,7 @@
   <!-- Template Main CSS File -->
   <link href="./styles/style.css" rel="stylesheet">
   <!-- Site customizations (timeline, chips, language toggle) -->
-  <link href="./styles/custom.css?v=202609160745" rel="stylesheet">
+  <link href="./styles/custom.css?v=202609210335" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -770,6 +770,48 @@
           </div>
         </div>
 
+
+        <!-- Row 2b: Deep Learning research -->
+        <p class="lab-row-title t" data-en="Applied Research in Deep Learning — graduate case studies" data-es="Investigación aplicada en Deep Learning — casos de estudio de posgrado">Applied Research in Deep Learning — graduate case studies</p>
+        <p class="lab-row-note t"
+          data-en="Executed end to end with measured results, reproducibility notes and a written analysis report for each case."
+          data-es="Ejecutados de punta a punta con resultados medidos, notas de reproducibilidad y un reporte de análisis escrito por caso.">
+          Executed end to end with measured results, reproducibility notes and a written analysis report for each case.</p>
+        <div class="row lab-grid">
+          <div class="col-md-6 col-lg-4">
+            <article class="lab-card">
+              <a class="lab-cover" href="lab/cnn-capstone-cifar10/notebook.html" target="_blank" rel="noopener"><img src="lab/covers/cnn-capstone-cifar10.svg" alt="CNN Capstone · CIFAR-10 Architecture Study"></a>
+              <div class="lab-body">
+                <h3 class="lab-title">CNN Capstone · CIFAR-10 Architecture Study</h3>
+                <p class="lab-desc t" data-en="Four architectures trained and compared under one protocol (Simple CNN, VGG16, ResNet50, EfficientNetB0): accuracy, F1, parameters, training and per-image inference time, plus t-SNE feature analysis, 15 parameter experiments, fine-tuning (0.889 → 0.928), ensembling, 3-fold CV and TFLite quantisation (3.6× smaller at −0.1 pt). The point is the trade-off: the accuracy leader and the deployment leader are different models." data-es="Cuatro arquitecturas entrenadas y comparadas bajo un mismo protocolo (CNN simple, VGG16, ResNet50, EfficientNetB0): accuracy, F1, parámetros, tiempo de entrenamiento e inferencia por imagen, más análisis de features con t-SNE, 15 experimentos de parámetros, fine-tuning (0.889 → 0.928), ensamble, CV de 3 folds y cuantización TFLite (3.6× más pequeño a −0.1 pt). Lo importante es el trade-off: el líder en accuracy y el líder en despliegue son modelos distintos.">Four architectures trained and compared under one protocol (Simple CNN, VGG16, ResNet50, EfficientNetB0): accuracy, F1, parameters, training and per-image inference time, plus t-SNE feature analysis, 15 parameter experiments, fine-tuning (0.889 → 0.928), ensembling, 3-fold CV and TFLite quantisation (3.6× smaller at −0.1 pt). The point is the trade-off: the accuracy leader and the deployment leader are different models.</p>
+                <div class="chips"><span>Computer Vision</span><span>Transfer learning</span><span>EfficientNet · ResNet</span><span>TFLite quantisation</span><span>Reproducible pipeline</span></div>
+                <div class="lab-links"><a class="lab-link lab-link-primary" href="lab/cnn-capstone-cifar10/notebook.html" target="_blank" rel="noopener"><i class="bi bi-journal-code"></i> <span class="t" data-en="Notebook" data-es="Notebook">Notebook</span></a><a class="lab-link" href="lab/cnn-capstone-cifar10/report.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> <span class="t" data-en="Analysis report" data-es="Reporte de análisis">Analysis report</span></a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="lab-card">
+              <a class="lab-cover" href="lab/federated-edge-ai/notebook.html" target="_blank" rel="noopener"><img src="lab/covers/federated-edge-ai.svg" alt="Federated Edge AI · LoRA + Differential Privacy"></a>
+              <div class="lab-body">
+                <h3 class="lab-title">Federated Edge AI · LoRA + Differential Privacy</h3>
+                <p class="lab-desc t" data-en="Simulated federated training of a DistilBERT classifier across edge clients with LoRA adapters (99% fewer trainable parameters) and DP-SGD noise. Seven controlled experiments — privacy budget ε, LoRA rank, number of clients and rounds, local epochs, data scarcity — quantify the accuracy / privacy / communication trade-offs and turn into deployment recommendations for high-security medical, resource-constrained IoT and performance-critical scenarios." data-es="Entrenamiento federado simulado de un clasificador DistilBERT en clientes edge con adaptadores LoRA (99% menos parámetros entrenables) y ruido DP-SGD. Siete experimentos controlados — presupuesto de privacidad ε, rango LoRA, número de clientes y rondas, épocas locales, escasez de datos — cuantifican los trade-offs accuracy / privacidad / comunicación y se traducen en recomendaciones de despliegue para escenarios médicos de alta seguridad, IoT con recursos limitados y críticos en rendimiento.">Simulated federated training of a DistilBERT classifier across edge clients with LoRA adapters (99% fewer trainable parameters) and DP-SGD noise. Seven controlled experiments — privacy budget ε, LoRA rank, number of clients and rounds, local epochs, data scarcity — quantify the accuracy / privacy / communication trade-offs and turn into deployment recommendations for high-security medical, resource-constrained IoT and performance-critical scenarios.</p>
+                <div class="chips"><span>Federated learning</span><span>LoRA</span><span>Differential privacy</span><span>Responsible AI</span><span>Edge AI</span></div>
+                <div class="lab-links"><a class="lab-link lab-link-primary" href="lab/federated-edge-ai/notebook.html" target="_blank" rel="noopener"><i class="bi bi-journal-code"></i> <span class="t" data-en="Notebook" data-es="Notebook">Notebook</span></a><a class="lab-link" href="lab/federated-edge-ai/report.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> <span class="t" data-en="Report" data-es="Reporte">Report</span></a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="lab-card">
+              <a class="lab-cover" href="lab/rag-pipeline-chromadb/notebook.html" target="_blank" rel="noopener"><img src="lab/covers/rag-pipeline-chromadb.svg" alt="Web Scraping → Vector DB → RAG Pipeline"></a>
+              <div class="lab-body">
+                <h3 class="lab-title">Web Scraping → Vector DB → RAG Pipeline</h3>
+                <p class="lab-desc t" data-en="An end-to-end retrieval pipeline engineered as a system, not a notebook: robots.txt-aware scraping, cleaning and chunking, SentenceTransformer embeddings stored in ChromaDB, semantic search and grounded generation with a local LLM (Ollama) — all running as Docker containers with an Open WebUI front-end. Includes a chunk-size × overlap × embedding-model experiment scored on a fixed set of evaluation queries." data-es="Un pipeline de recuperación de punta a punta construido como sistema, no como notebook: scraping que respeta robots.txt, limpieza y chunking, embeddings SentenceTransformer almacenados en ChromaDB, búsqueda semántica y generación fundamentada con un LLM local (Ollama) — todo en contenedores Docker con front-end Open WebUI. Incluye un experimento tamaño de chunk × overlap × modelo de embeddings evaluado sobre un conjunto fijo de consultas.">An end-to-end retrieval pipeline engineered as a system, not a notebook: robots.txt-aware scraping, cleaning and chunking, SentenceTransformer embeddings stored in ChromaDB, semantic search and grounded generation with a local LLM (Ollama) — all running as Docker containers with an Open WebUI front-end. Includes a chunk-size × overlap × embedding-model experiment scored on a fixed set of evaluation queries.</p>
+                <div class="chips"><span>RAG</span><span>ChromaDB</span><span>Ollama · local LLM</span><span>Docker</span><span>Retrieval evaluation</span></div>
+                <div class="lab-links"><a class="lab-link lab-link-primary" href="lab/rag-pipeline-chromadb/notebook.html" target="_blank" rel="noopener"><i class="bi bi-journal-code"></i> <span class="t" data-en="Notebook" data-es="Notebook">Notebook</span></a><a class="lab-link" href="lab/rag-pipeline-chromadb/report.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> <span class="t" data-en="Report" data-es="Reporte">Report</span></a></div>
+              </div>
+            </article>
+          </div>
+        </div>
         <!-- Row 3: engineering -->
         <p class="lab-row-title t" data-en="Full-stack engineering — MIT xPRO" data-es="Ingeniería full-stack — MIT xPRO">Full-stack engineering — MIT xPRO</p>
         <div class="row lab-grid">
@@ -899,7 +941,7 @@
   <!-- Template Main JS File -->
   <script src="./js/main.js"></script>
   <!-- Language toggle + typed titles -->
-  <script src="./js/i18n.js?v=202609160745"></script>
+  <script src="./js/i18n.js?v=202609210335"></script>
 
 </body>
 
