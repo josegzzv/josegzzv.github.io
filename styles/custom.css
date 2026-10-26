@@ -565,3 +565,8 @@ html[data-lang="en"] .book-en, html[data-lang="es"] .book-es { background: #0078
 html[data-lang="en"] .book-en:hover, html[data-lang="es"] .book-es:hover { background: #0062d1; color: #fff; }
 /* header brand never wraps */
 #header .logo a { display: inline-flex; align-items: center; white-space: nowrap; }
+
+/* CV download + booking buttons */
+.hero .hero-cv { margin-top: .25rem; }
+.hero .hero-cv .btn { margin-top: .5rem; }
+.exec-actions-cv { margin-top: .5rem; }
